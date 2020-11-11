@@ -3,11 +3,95 @@ import java.util.Scanner;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//ejercicio11();// este es una calculadora
+		
+
+		boolean continuar = true;
+	    Scanner sc = new Scanner (System.in);
+	    
+		try {
+			
+		
+//			do
+	//		{			
+	//	ejercicio11(); // este es un calculador
+		
+//	System.out.println ("  Presione 1 para continuar");
+//	int valor =  sc.nextInt();
+//	continuar = (valor == 1);
+	
+//			} while (continuar);
+		
 		//ejercicio12();// mayor y menor
-		ejercicio10(); // este es una serie, los meses
+		//ejercicio10(); // este es una serie, los meses
+		// ejercicio7();//este toma los numeros pares
+		ejercicio9(); //este es un acumulador
+	
 	}
+		catch (Exception ex) {
+			System.out.println("Ingresó un valor inesperado");
+		}
+		}
+	
+
+		
+		private static void ejercicio9() //lamentablemente aún no encontre como sacar el número menor
+		{
+			Scanner sc = new Scanner (System.in);
+			System.out.println ("Ingrese dos números enteros, y un número negativo para finalizar");
+			long acumulador = 0;
+			int minimo = 0;
+			
+			int numA;
+			numA = sc.nextInt();
+		
+			
+			while (numA >= 0)
+			{
+			 acumulador = numA - acumulador;
+			 
+			 if (numA<minimo)
+				 
+			 {minimo = numA;
+			 
+			}
+				numA = sc.nextInt();
+				
+			}
+			
+			System.out.println ("la resta es: " + acumulador);
+			System.out.println ("el minimo es:  " + minimo);
+			
+			
+	//	do
+	//	{
+	//		numA = sc.nextInt();
+	//		if (numA > 0) 
+	//		{
+	//		acumulador = acumulador + numA;
+	//		}
+	//	{while (numA >= 0);		
+	//		System.out.println ("la suma es:  " + acumulador);
+		 }
+
+private static void ejercicio7 ()
+{ 
+	int numero;
+//for(i = 0; i < 200; i ++)
+//{
+//	if (( i % 2) == 0)
+//			{
+//	System.out.println (i);
+//}
+//}
+	for (numero=0; numero<200; numero= numero +2)
+	{
+		System.out.println(numero);
+	}
+}
+				
+				
+
+
 
 	private static void ejercicio10()
 
