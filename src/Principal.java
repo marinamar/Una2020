@@ -29,41 +29,53 @@ public class Principal {
 		}
 	}
 
-	private static void ejercicio9() // lamentablemente aún no encontre como
-										// sacar el número menor
+	private static void ejercicio9() 
 	{
+		
 		Scanner sc = new Scanner(System.in);
 		
 		//El mensaje me pide dos numeros enteros, pero me permite ingresar muchos 
 		System.out.println("Ingrese dos números enteros, y un número negativo para finalizar");
-		
 		long acumulador = 0;
-		int minimo = 0;
-
+		int minimo = 10000;
 		int numA;
-		numA = sc.nextInt();
+
+	numA = sc.nextInt();
+		
+while (numA >=0)
+{acumulador = numA - acumulador;
+if (numA < minimo)
+{
+	minimo = numA;
+}
+numA = sc.nextInt();
+}
+
+	
+	System.out.println("la resta es: " + acumulador);
+	System.out.println("el minimo es:  " + minimo);
 		
 /* Para sacar el minimo pensar lo siguiente:
  * ¿Hay alguna posibilidad de que el minimo no esté dentro del conjunto de numeros que ingresó el usuario?
  * ¿Que valor inicial tendria que tener el minimo para despues comparar con los siguientes numeros que ingresen?
  * Dentro de un conjunto de numeros cualquiera ¿Hay algun caso en que no haya un minimo?
 */	
-		while (numA >= 0) {
+		//while (numA >= 0) {
 			//El acumulador no es una variable de control, siempre deberia sumar todos los numeros que van ingresando
-			acumulador = numA - acumulador;
+		
 
-			if (numA < minimo)
+		//	if (numA < numB)
 
-			{
-				minimo = numA;
+		//	{
+			//	minimo = numA;
 
-			}
-			numA = sc.nextInt();
+		//	}
+		//	numA = sc.nextInt();
 
-		}
+		//}
 
-		System.out.println("la resta es: " + acumulador);
-		System.out.println("el minimo es:  " + minimo);
+		//System.out.println("la resta es: " + acumulador);
+		//System.out.println("el minimo es:  " + minimo);
 
 		// do
 		// {
