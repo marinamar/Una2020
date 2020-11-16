@@ -34,26 +34,41 @@ public class Principal {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		
+		
 		//El mensaje me pide dos numeros enteros, pero me permite ingresar muchos 
 		System.out.println("Ingrese dos números enteros, y un número negativo para finalizar");
-		long acumulador = 0;
-		int minimo = 10000;
+		
 		int numA;
+		int numB;
+		int resultado;
+		int minimo;
+		
+		resultado = numA - numB;
+		System.out.println("La resta es: " + resultado);
 
 	numA = sc.nextInt();
 		
-while (numA >=0)
-{acumulador = numA - acumulador;
-if (numA < minimo)
+while ((resultado < numB) || (resultado < numA));
+
+if (numA < numB);
 {
-	minimo = numA;
-}
-numA = sc.nextInt();
+	numA = minimo;}
+
+numA=sc.nextInt();
+
+else {
+	if(numB <numA);
+
+{
+	numB = minimo;}
 }
 
+numB=sc.nextInt();
+
 	
-	System.out.println("la resta es: " + acumulador);
-	System.out.println("el minimo es:  " + minimo);
+	//System.out.println("la resta es: " + acumulador);
+	//System.out.println("el minimo es:  " + minimo);
 		
 /* Para sacar el minimo pensar lo siguiente:
  * ¿Hay alguna posibilidad de que el minimo no esté dentro del conjunto de numeros que ingresó el usuario?
